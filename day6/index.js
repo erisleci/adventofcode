@@ -28,8 +28,8 @@ lineReader.on("line", function (line) {
 
   for (let i = 0; i < line.length - 13; i++) {
     const lineArray = line.split("");
-    const fourCharacters = lineArray.slice(i, i + 14);
-    const set = new Set(fourCharacters);
+    const fourteenCharacters = lineArray.slice(i, i + 14);
+    const set = new Set(fourteenCharacters);
     if (set.size === 14) {
       console.log(i + 14);
       break;

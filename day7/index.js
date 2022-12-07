@@ -77,9 +77,6 @@ lineReader.on("line", function (line) {
   }
 
   if (line.includes("$ cd")) {
-    if (lineParts.at(-1) === ".") {
-      console.log(lineParts);
-    }
     moveCurrentLevel(lineParts.at(-1));
     return;
   }

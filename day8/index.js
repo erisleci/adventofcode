@@ -164,10 +164,6 @@ const calculateScenicScore = (rowIndex, colIndex) => {
     }
   }
 
-  if (rowIndex === 3 && colIndex === 2) {
-    console.log(rightTotal, bottomTotal, topTotal);
-  }
-
   totals.push(leftTotal * rightTotal * topTotal * bottomTotal);
 };
 

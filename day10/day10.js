@@ -67,7 +67,6 @@ lineReader.on("close", () => {
 
     if (cycleNumber % 40 === 0) {
       sprite += "\n";
-      console.log(cycleNumber);
     }
 
     if (instruction === "noop") {
